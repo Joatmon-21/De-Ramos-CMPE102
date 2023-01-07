@@ -3,8 +3,10 @@ maleAmount = int(input("Enter the amount of male students in the class: "))
 femaleAmount = int(input("Enter the amount of female students in the class: "))
 
 total = maleAmount + femaleAmount
+
 malePercent = (float(maleAmount/total)*100)
 femalePercent = (float(femaleAmount/total)*100)
+
 format_malePercent = "{:.2f}".format(malePercent)
 format_femalePercent = "{:.2f}".format(femalePercent)
 

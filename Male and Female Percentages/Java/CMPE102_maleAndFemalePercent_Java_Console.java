@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CMPE102_Jan_7_2023_Java_Console{
+public class CMPE102_maleAndFemalePercent_Java_Console{
     public static void main(String args[]){
     
         Scanner input = new Scanner(System.in);
