@@ -4,27 +4,27 @@ public class CMPE102_Jan_7_2023_Java_Console{
     public static void main(String args[]){
     
         Scanner input = new Scanner(System.in);
-        float malesPercent;
-        float femalesPercent;
+        float malePercent;
+        float femalePercent;
         int total;
 
-        System.out.println("Enter number of male students in the class");
-        int malesAmount = input.nextInt();
+        System.out.print("Enter number of male students in the class: ");
+        int maleAmount = input.nextInt();
 
-        System.out.println("Enter number of female students in the class");
-        int femalesAmount = input.nextInt();
+        System.out.print("Enter number of female students in the class: ");
+        int femaleAmount = input.nextInt();
         input.close();
 
-        total = malesAmount + femalesAmount;
-        malesPercent = (float) malesAmount/(malesAmount+femalesAmount)*100;
-        femalesPercent = (float) femalesAmount/(malesAmount+femalesAmount)*100;
-        String malesPercentString = String.format("%.02f", malesPercent);
-        String femalesPercentString = String.format("%.02f", femalesPercent);
+        total = maleAmount + femaleAmount;
+        malePercent = (float) maleAmount/(total)*100;
+        femalePercent = (float) femaleAmount/(total)*100;
+        String malePercentString = String.format("%.02f", malePercent);
+        String femalePercentString = String.format("%.02f", femalePercent);
 
         System.out.println("Total Number of Students: " + total);
-        System.out.println("Male Students = " + malesAmount + "/" + total + " students");
-        System.out.println("Male Students = " + femalesAmount + "/" + total +" students");
-        System.out.println("Percentage of male students = " + malesPercentString + "%");
-        System.out.println("Percentage of female students = " + femalesPercentString + "%");        
+        System.out.println("Male Students = " + maleAmount + " / " + total + " students");
+        System.out.println("Female Students = " + femaleAmount + " / " + total +" students");
+        System.out.println("Percentage of Male Students = " + malePercentString + " %");
+        System.out.println("Percentage of Female Students = " + femalePercentString + " %");        
     }
 }
