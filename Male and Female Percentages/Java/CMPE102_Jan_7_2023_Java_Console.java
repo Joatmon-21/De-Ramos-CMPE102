@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CMPE102_Jan_7_2023_Java_Console{
     public static void main(String args[]){
-
+    
         Scanner input = new Scanner(System.in);
         float malesPercent;
         float femalesPercent;
@@ -22,8 +22,8 @@ public class CMPE102_Jan_7_2023_Java_Console{
         String femalesPercentString = String.format("%.02f", femalesPercent);
 
         System.out.println("Total Number of Students: " + total);
-        System.out.println("Male Students = " + malesAmount + "/" + total + "students");
-        System.out.println("Male Students = " + femalesAmount + "/" + total +"students");
+        System.out.println("Male Students = " + malesAmount + "/" + total + " students");
+        System.out.println("Male Students = " + femalesAmount + "/" + total +" students");
         System.out.println("Percentage of male students = " + malesPercentString + "%");
         System.out.println("Percentage of female students = " + femalesPercentString + "%");        
     }
