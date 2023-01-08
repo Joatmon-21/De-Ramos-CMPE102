@@ -1,4 +1,4 @@
-#Written by: Dan Jandel C. De Ramos
+# Written by: Dan Jandel C. De Ramos
 
 sugar = 0.03125
 butter = 0.02083

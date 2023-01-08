@@ -1,3 +1,5 @@
+/* Written by: Dan Jandel C. De Ramos */
+
 #include <iostream>
 #include <iomanip>
 

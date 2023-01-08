@@ -1,4 +1,5 @@
 /* Written by: Dan Jandel C. De Ramos */
+
 import java.util.Scanner;
 
 public class CMPE102_ingredientAdjuster_Java_Console {
