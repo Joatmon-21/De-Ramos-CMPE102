@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class CMPE102_ingredientAdjuster_Java_Console {
+public class CMPE102_ingredientAdjuster_Java_Console{
     public static void main(String[]args){
 
         Scanner input = new Scanner(System.in);

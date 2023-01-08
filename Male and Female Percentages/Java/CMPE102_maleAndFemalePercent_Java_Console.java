@@ -6,9 +6,9 @@ public class CMPE102_maleAndFemalePercent_Java_Console{
     public static void main(String args[]){
     
         Scanner input = new Scanner(System.in);
-        int maleAmount;
-        int femaleAmount;
-        int total;
+        float maleAmount;
+        float femaleAmount;
+        float total;
         float malePercent;
         float femalePercent;
         String malePercentString;
@@ -22,8 +22,8 @@ public class CMPE102_maleAndFemalePercent_Java_Console{
         input.close();
 
         total = maleAmount + femaleAmount;
-        malePercent = (float) (maleAmount/total)*100;
-        femalePercent = (float) (femaleAmount/total)*100;
+        malePercent = (maleAmount/total)*100;
+        femalePercent = (femaleAmount/total)*100;
         malePercentString = String.format("%.02f", malePercent);
         femalePercentString = String.format("%.02f", femalePercent);
 
