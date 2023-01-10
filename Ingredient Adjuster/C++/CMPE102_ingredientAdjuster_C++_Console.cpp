@@ -31,4 +31,5 @@ int main(){
     cout << "Butter: " << butterTotal << " Cups" << endl;
     cout << "Flour: " << flourTotal << " Cups" << endl;
     cout << endl;
+    
 }
