@@ -32,4 +32,5 @@ int main(){
     cout << "Percentage of Male Students: " << malePercent << " %" << endl;
     cout << "Percentage of Female Students: " << femalePercent << " %" << endl;
     cout << endl;
+    
 }
