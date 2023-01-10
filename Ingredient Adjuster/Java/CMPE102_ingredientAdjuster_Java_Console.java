@@ -36,5 +36,6 @@ public class CMPE102_ingredientAdjuster_Java_Console{
         System.out.println("Butter: " + butterTotalString + " Cups");
         System.out.println("Flour: " + flourTotalString + " Cups");
         System.out.println();
+        
     }
 }
