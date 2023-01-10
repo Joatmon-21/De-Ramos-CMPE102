@@ -1,4 +1,4 @@
-#Written by: Dan Jandel C. De Ramos
+# Written by: Dan Jandel C. De Ramos
 
 maleAmount = int(input("Enter the amount of male students in the class: "))
 femaleAmount = int(input("Enter the amount of female students in the class: "))
