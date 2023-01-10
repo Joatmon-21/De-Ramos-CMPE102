@@ -27,10 +27,10 @@ public class CMPE102_maleAndFemalePercent_Java_Console{
         malePercentString = String.format("%.02f", malePercent);
         femalePercentString = String.format("%.02f", femalePercent);
 
-        System.out.println("Total Number of Students: " + total);
-        System.out.println("Male Students = " + maleAmount + " / " + total + " students");
-        System.out.println("Female Students = " + femaleAmount + " / " + total +" students");
-        System.out.println("Percentage of Male Students = " + malePercentString + " %");
-        System.out.println("Percentage of Female Students = " + femalePercentString + " %");        
+        System.out.println("Total Number of Students: " + (int)total);
+        System.out.println("Male Students: " + (int)maleAmount + " / " + (int)total);
+        System.out.println("Female Students: " + (int)femaleAmount + " / " + (int)total);
+        System.out.println("Percentage of Male Students: " + malePercentString + " %");
+        System.out.println("Percentage of Female Students: " + femalePercentString + " %");        
     }
 }

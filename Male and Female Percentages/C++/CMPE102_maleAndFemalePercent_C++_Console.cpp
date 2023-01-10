@@ -24,9 +24,9 @@ int main(){
 
     cout << fixed;
     cout.precision(2);
-    cout << "Total Number of students: " << total << endl;
-    cout << "Male Students: " << maleAmount << "/" << total << endl;
-    cout << "Female Students: " << femaleAmount << "/" << total << endl;
+    cout << "Total Number of Students: " << total << endl;
+    cout << "Male Students: " << maleAmount << " / " << total << endl;
+    cout << "Female Students: " << femaleAmount << " / " << total << endl;
     cout << "Percentage of Male Students: " << malePercent << " %" << endl;
     cout << "Percentage of Female Students: " << femalePercent << " %";
     return 0;

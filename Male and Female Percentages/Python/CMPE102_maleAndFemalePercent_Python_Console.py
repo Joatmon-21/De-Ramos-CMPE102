@@ -13,6 +13,6 @@ format_femalePercent = "{:.2f}".format(femalePercent)
 
 print("Total Number of Students:", total)
 print("Male Students:", maleAmount, "/", total)
-print("Female Studnets:", femaleAmount,"/", total)
+print("Female Students:", femaleAmount,"/", total)
 print("Percentage of Male Students:", format_malePercent, "%")
-print("Percentage of Female Stuents:", format_femalePercent, "%")
+print("Percentage of Female Students:", format_femalePercent, "%")
