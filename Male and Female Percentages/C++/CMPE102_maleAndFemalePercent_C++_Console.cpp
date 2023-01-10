@@ -30,6 +30,6 @@ int main(){
     cout << "Male Students: " << maleAmount << " / " << total << endl;
     cout << "Female Students: " << femaleAmount << " / " << total << endl;
     cout << "Percentage of Male Students: " << malePercent << " %" << endl;
-    cout << "Percentage of Female Students: " << femalePercent << " %";
+    cout << "Percentage of Female Students: " << femalePercent << " %" << endl;
     cout << endl;
 }
