@@ -3,7 +3,7 @@
 1 cup Butter
 2.75 cups Flour
 
-Meaning, 1 cookie requires:
+Meaning 1 cookie requires:
 (1.5/48) = 0.03125 cups of sugar
 (1/48) = 0.02083 cups of butter
 (2.75/48) = 0.05730 cups of flour
