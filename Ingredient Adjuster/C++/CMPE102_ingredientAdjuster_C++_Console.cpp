@@ -29,6 +29,6 @@ int main(){
     cout << "Ingredients needed for " << cookies << " pieces of cookies" << endl;
     cout << "Sugar: " << sugarTotal << " Cups" << endl;
     cout << "Butter: " << butterTotal << " Cups" << endl;
-    cout << "Flour: " << flourTotal << " Cups";
+    cout << "Flour: " << flourTotal << " Cups" << endl;
     cout << endl;
 }
