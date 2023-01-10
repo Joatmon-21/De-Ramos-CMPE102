@@ -15,6 +15,7 @@ int main(){
     float flourTotal;
     int cookies;
 
+    cout << endl;
     cout << "Enter the amount of cookies you wish to bake: ";
     cin >> cookies;
 
@@ -24,8 +25,10 @@ int main(){
 
     cout << fixed;
     cout.precision(2);
+    cout << endl;
     cout << "Ingredients needed for " << cookies << " pieces of cookies" << endl;
     cout << "Sugar: " << sugarTotal << " Cups" << endl;
-    cout << "Sugar: " << butterTotal << " Cups" << endl;
-    cout << "Sugar: " << flourTotal << " Cups";
+    cout << "Butter: " << butterTotal << " Cups" << endl;
+    cout << "Flour: " << flourTotal << " Cups";
+    cout << endl;
 }

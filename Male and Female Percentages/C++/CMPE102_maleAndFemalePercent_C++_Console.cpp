@@ -13,6 +13,7 @@ int main(){
     float malePercent;
     float femalePercent;
 
+    cout << endl;
     cout << "Enter the amount of male students in the class: ";
     cin >> maleAmount;
     cout << "Enter the amount of female students in the class: ";
@@ -24,10 +25,11 @@ int main(){
 
     cout << fixed;
     cout.precision(2);
+    cout << endl;
     cout << "Total Number of Students: " << total << endl;
     cout << "Male Students: " << maleAmount << " / " << total << endl;
     cout << "Female Students: " << femaleAmount << " / " << total << endl;
     cout << "Percentage of Male Students: " << malePercent << " %" << endl;
     cout << "Percentage of Female Students: " << femalePercent << " %";
-    return 0;
+    cout << endl;
 }

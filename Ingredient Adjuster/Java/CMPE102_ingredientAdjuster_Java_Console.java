@@ -17,6 +17,7 @@ public class CMPE102_ingredientAdjuster_Java_Console{
         String butterTotalString;
         String flourTotalString;
 
+        System.out.println();
         System.out.print("Enter the amount of cookies you wish to bake: ");
         cookies = input.nextInt();
         input.close();
@@ -29,10 +30,11 @@ public class CMPE102_ingredientAdjuster_Java_Console{
         butterTotalString = String.format("%.02f", butterTotal);
         flourTotalString = String.format("%.02f", flourTotal);
 
+        System.out.println();
         System.out.println("Ingredients needed for " + cookies + " pieces of cookies");
         System.out.println("Sugar: " + sugarTotalString + " Cups");
         System.out.println("Butter: " + butterTotalString + " Cups");
         System.out.println("Flour: " + flourTotalString + " Cups");
-
+        System.out.println();
     }
 }
