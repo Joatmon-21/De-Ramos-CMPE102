@@ -18,14 +18,17 @@ public class CMPE102_BMI_Java_Console{
 
         System.out.println("Please type 1 for metric and 2 for english units");
         unit = input.nextInt();
+        System.out.println();
 
         if(unit == 1){
 
             System.out.println("Please enter your weight in kilograms (kg)");
             weight = input.nextDouble();
+            System.out.println();
 
             System.out.println("Please enter your height in centimeters (cm)");
             height = input.nextDouble();
+            System.out.println();
 
             bmi = weight / (Math.pow((height/100),2));
 
@@ -55,9 +58,11 @@ public class CMPE102_BMI_Java_Console{
 
             System.out.println("Please enter your weight in pounds (lb)");
             weight = input.nextDouble();
+            System.out.println();
 
             System.out.println("Please enter your height in inches (in)");
             height = input.nextDouble();
+            System.out.println();
 
             input.close();
 
@@ -80,7 +85,7 @@ public class CMPE102_BMI_Java_Console{
             System.out.println();
             System.out.println("You are: " + bmiRating);
             System.out.println();
-            
+
         }
     }
 }
