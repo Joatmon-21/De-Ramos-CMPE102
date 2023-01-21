@@ -35,5 +35,6 @@ public class CMPE102_maleAndFemalePercent_Java_Console{
         System.out.println("Percentage of Male Students: " + malePercentString + " %");
         System.out.println("Percentage of Female Students: " + femalePercentString + " %");
         System.out.println();
+        
     }
 }
