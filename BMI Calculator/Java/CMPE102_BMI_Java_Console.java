@@ -35,20 +35,18 @@ public class CMPE102_BMI_Java_Console{
             input.close();
 
             if(bmi <= 18.5){
-                bmiRating = "underweight";
+                bmiRating = "Underweight";
             }else if(bmi >= 18.6 && bmi <= 24.9){
-                bmiRating = "normal";
+                bmiRating = "Normal";
             }else if(bmi >= 25.0 && bmi <= 29.9){
-                bmiRating = "overweight";
+                bmiRating = "Overweight";
             }else if(bmi >= 30){
-                bmiRating = "obese";
+                bmiRating = "Obese";
             }
             
             bmiString = String.format("%.02f", bmi);
 
-            System.out.println();
-            System.out.println("Your bmi is " + bmiString);
-            System.out.println();
+            System.out.println("Your BMI is " + bmiString);
             System.out.println("You are: " + bmiRating);
             System.out.println();
 
@@ -69,20 +67,18 @@ public class CMPE102_BMI_Java_Console{
             bmi = (weight / (Math.pow(height, 2)))*703;
 
             if(bmi <= 18.5){
-                bmiRating = "underweight";
+                bmiRating = "Underweight";
             }else if(bmi <= 18.6 && bmi <= 24.9){
-                bmiRating = "normal";
+                bmiRating = "Normal";
             }else if(bmi <= 25.0 && bmi <= 29.9){
-                bmiRating = "overweight";
+                bmiRating = "Overweight";
             }else if(bmi >= 30){
-                bmiRating = "obese";
+                bmiRating = "Obese";
             }
             
             bmiString = String.format("%.02f", bmi);
 
-            System.out.println();
-            System.out.println("Your bmi is " + bmiString);
-            System.out.println();
+            System.out.println("Your BMI is " + bmiString);
             System.out.println("You are: " + bmiRating);
             System.out.println();
 
