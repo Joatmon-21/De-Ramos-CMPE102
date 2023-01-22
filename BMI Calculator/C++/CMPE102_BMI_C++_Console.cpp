@@ -1,4 +1,7 @@
-/* Written by: Dan Jandel C. De Ramos*/
+/* Written by: Dan Jandel C. De Ramos
+ * Data for BMI Ratings obtained from: https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm
+ * Data for BMI formulas obtained from: https://www.bmi-calculator.net/bmi-formula.php
+ */
 
 #include <iostream>
 #include <iomanip>

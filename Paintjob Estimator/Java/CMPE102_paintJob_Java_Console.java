@@ -1,3 +1,5 @@
+/* Written by: Dan Jandel C. De Ramos */
+
 import java.util.Scanner;
 
 public class CMPE102_paintJob_Java_Console {
@@ -42,13 +44,19 @@ public class CMPE102_paintJob_Java_Console {
         laborCostString = String.format("%.02f", laborCost);
         totalCostString = String.format("%.02f", totalCost);
 
-        System.out.println("Gallons of paint required: " + paintGallonString + " gallons of paint");
+        if(paintGallon == 1){
+            System.out.println("Gallons of paint required: " + paintGallonString + " gallon of paint");    
+        }else{
+            System.out.println("Gallons of paint required: " + paintGallonString + " gallons of paint");
+        }
         System.out.print("It will take " + laborTimeHoursInt + " Hours");
+
         if(laborTimeMinutesInt == 0){
             System.out.println();
         }else{
            System.out.println(" and " + laborTimeMinutesInt + " Minutes");
         }
+
         System.out.println("The paint will cost $" + paintCostString);
         System.out.println("The labor will cost $" + laborCostString + " at a rate of $20 per hour");
         System.out.println("Your total cost equates to: $" + totalCostString);
