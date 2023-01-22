@@ -18,10 +18,11 @@ int main(){
     double paintPrice;
     double totalCost;
 
-    cout << "Please enter the area of the wall in square feet" << endl;
+    cout << "Enter the area of the wall (Square Feet)" << endl;
     cin >> wallArea;
-    cout << "Please enter the cost of the paint per gallon" << endl;
+    cout << "Enter the price of the paint per gallon (USD)" << endl;
     cin >> paintPrice;
+    cout << endl;
 
     paintGallon = wallArea/115; /* 115sqft : 1 Gallon of Paint */
     totalLaborTime = paintGallon*8; /* 1 Gallon of Paint : 8 Hours of Labor */
@@ -29,9 +30,9 @@ int main(){
     laborCost= totalLaborTime*20; /* 8 Hours of Labor : 20 Dollars */
     totalCost = laborCost + paintCost;
 
-    laborTimeHoursInt = static_cast<int>(totalLaborTime);
-    laborTimeMinutesDouble = static_cast<double>((totalLaborTime - laborTimeHoursInt));
-    laborTimeMinutesInt = static_cast<int>((60*laborTimeMinutesDouble));
+    laborTimeHoursInt = static_cast<int>(totalLaborTime); /* Converting to Int to obtain the whole number or hours only */
+    laborTimeMinutesDouble = static_cast<double>((totalLaborTime - laborTimeHoursInt)); /* Subtracting the whole number from the total to obtain minutes */
+    laborTimeMinutesInt = static_cast<int>((60*laborTimeMinutesDouble)); /* Converting minutes from decimal form in hours into minutes */
 
     cout << fixed;
     cout.precision(2);
@@ -50,6 +51,6 @@ int main(){
     }
 
     cout << "The paint will cost $" <<paintCost << endl;
-    cout << "The labor will cost $" <<laborCost << endl;
-    cout << "Your total cost equates to $" << totalCost;
+    cout << "The labor will cost $" <<laborCost << " at a rate of $20 per hour" << endl;
+    cout << "Your total cost equates to : $" << totalCost;
 }

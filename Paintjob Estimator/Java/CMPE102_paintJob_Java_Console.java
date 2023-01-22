@@ -21,11 +21,13 @@ public class CMPE102_paintJob_Java_Console {
         String laborCostString;
         String totalCostString;
 
-        System.out.println("Enter the area of the wall in square feet");
+        System.out.println("Enter the area of the wall (Square Feet)");
         wallArea = input.nextInt();
 
         System.out.println("Enter the price of the paint per gallon (USD)");
         paintPrice = input.nextDouble();
+
+        System.out.println();
 
         input.close();
 
@@ -35,8 +37,8 @@ public class CMPE102_paintJob_Java_Console {
         laborCost= totalLaborTime*20; /* 8 Hours of Labor : 20 Dollars */
         totalCost = laborCost + paintCost;
 
-        laborTimeHoursInt = (int) totalLaborTime;
-        laborTimeMinutesDouble = (double) (totalLaborTime - laborTimeHoursInt);
+        laborTimeHoursInt = (int) totalLaborTime; /* Converting to Int to obtain the whole number or hours only */
+        laborTimeMinutesDouble = (double) (totalLaborTime - laborTimeHoursInt); /* Subtracting the whole number from the total to obtain minutes */
         laborTimeMinutesInt = (int) (60*laborTimeMinutesDouble);
 
         paintGallonString = String.format("%.02f", paintGallon);

@@ -1,9 +1,10 @@
 # Written by: Dan Jandel C. De Ramos
 
-print ("Please enter the area of the wall in square feet")
+print ("Enter the area of the wall (Square Feet)")
 wallArea = (float(input("")))
-print ("Please enter the cost of the paint per gallon")
+print ("Enter the price of the paint per gallon (USD)")
 paintPrice = (float(input("")))
+print()
 
 paintGallon = wallArea/115 # 115sqft : 1 Gallon of Paint 
 totalLaborTime = paintGallon*8 # 1 Gallon of Paint : 8 Hours of Labor
@@ -11,16 +12,15 @@ paintCost = paintGallon*paintPrice
 laborCost = totalLaborTime*20 # 8 Hours of Labor : 20 Dollars
 totalCost = laborCost + paintCost
 
-laborTimeHoursInt = (int(totalLaborTime))
-laborTimeMinutesFloat = (float(totalLaborTime - laborTimeHoursInt))
-laborTimeMinutesInt = (int(60*laborTimeMinutesFloat))
+laborTimeHoursInt = (int(totalLaborTime)) # Converting to Int to obtain the whole number or hours only
+laborTimeMinutesFloat = (float(totalLaborTime - laborTimeHoursInt)) # Subtracting the whole number from the total to obtain minutes
+laborTimeMinutesInt = (int(60*laborTimeMinutesFloat)) # Converting minutes from decimal form in hours into minutes
 
 paintCostString = "{:.2f}".format(paintCost)
 paintGallonString = "{:.2f}".format(paintGallon)
 laborCostString = "{:.2f}".format(laborCost)
 totalCostString = "{:.2f}".format(totalCost)
 
-print()
 if(paintGallon == 1):
     print("Gallons of paint required: " + paintGallonString + " gallon of paint")
 else:
@@ -32,4 +32,4 @@ else:
     print("It will take" , laborTimeHoursInt , "Hours and" , laborTimeMinutesInt , "Minutes")
 print("The paint will cost $" + paintCostString)
 print("The labor will cost $" + laborCostString + " at a rate of $20 per hour")
-print("Your total cost equates to $"+ totalCostString)
+print("Your total cost equates to: $"+ totalCostString)
