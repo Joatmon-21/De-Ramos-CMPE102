@@ -12,76 +12,57 @@ public class CMPE102_BMI_Java_Console{
         int unit;
         double weight;
         double height;
-        double bmi;
+        double bmi = 0;
         String bmiString;
         String bmiRating = "";
 
-        System.out.println("Please type 1 for metric and 2 for english units");
+        System.out.println("Type 1 for metric or 2 for english units");
         unit = input.nextInt();
         System.out.println();
 
         if(unit == 1){
 
-            System.out.println("Please enter your weight in kilograms (kg)");
+            System.out.println("Enter your weight in kilograms (kg)");
             weight = input.nextDouble();
             System.out.println();
 
-            System.out.println("Please enter your height in centimeters (cm)");
+            System.out.println("Enter your height in centimeters (cm)");
             height = input.nextDouble();
             System.out.println();
 
-            bmi = weight / (Math.pow((height/100),2));
-
             input.close();
-
-            if(bmi <= 18.5){
-                bmiRating = "Underweight";
-            }else if(bmi >= 18.6 && bmi <= 24.9){
-                bmiRating = "Normal";
-            }else if(bmi >= 25.0 && bmi <= 29.9){
-                bmiRating = "Overweight";
-            }else if(bmi >= 30){
-                bmiRating = "Obese";
-            }
             
-            bmiString = String.format("%.02f", bmi);
-
-            System.out.println("Your BMI is " + bmiString);
-            System.out.println("You are: " + bmiRating);
-            System.out.println();
-
-            input.close();
+            bmi = weight / (Math.pow((height/100),2));
 
         }else if(unit == 2){
 
-            System.out.println("Please enter your weight in pounds (lb)");
+            System.out.println("Enter your weight in pounds (lb)");
             weight = input.nextDouble();
             System.out.println();
 
-            System.out.println("Please enter your height in inches (in)");
+            System.out.println("Enter your height in inches (in)");
             height = input.nextDouble();
             System.out.println();
 
             input.close();
 
             bmi = (weight / (Math.pow(height, 2)))*703;
-
-            if(bmi <= 18.5){
-                bmiRating = "Underweight";
-            }else if(bmi <= 18.6 && bmi <= 24.9){
-                bmiRating = "Normal";
-            }else if(bmi <= 25.0 && bmi <= 29.9){
-                bmiRating = "Overweight";
-            }else if(bmi >= 30){
-                bmiRating = "Obese";
-            }
-            
-            bmiString = String.format("%.02f", bmi);
-
-            System.out.println("Your BMI is " + bmiString);
-            System.out.println("You are: " + bmiRating);
-            System.out.println();
-
         }
+
+        if(bmi <= 18.5){
+            bmiRating = "Underweight";
+        }else if(bmi >= 18.6 && bmi <= 24.9){
+            bmiRating = "Normal";
+        }else if(bmi >= 25.0 && bmi <= 29.9){
+            bmiRating = "Overweight";
+        }else if(bmi >= 30){
+            bmiRating = "Obese";
+        }
+        
+        bmiString = String.format("%.02f", bmi);
+
+        System.out.println("Your BMI is: " + bmiString);
+        System.out.print("Your BMI Rating is: " + bmiRating);
+
     }
 }
