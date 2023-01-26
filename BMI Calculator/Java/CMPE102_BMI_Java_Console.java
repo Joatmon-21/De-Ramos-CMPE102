@@ -3,25 +3,35 @@
  * Data for BMI formulas obtained from: https://www.bmi-calculator.net/bmi-formula.php
  */
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CMPE102_BMI_Java_Console{
+
+    public static double calculateMetric(double weight, double height){
+        return (weight / (Math.pow((height/100),2)));
+    }
+
+    public static double calculateEnglish(double weight, double height){
+        return (weight / (Math.pow(height, 2)))*703;
+    }
+    
     public static void main(String[]args){
 
         Scanner input = new Scanner(System.in);
-        int unit;
-        double weight;
-        double height;
+        int unit = 0;               
         double bmi = 0;
+        double height;
+        double weight;
         String bmiString;
         String bmiRating = "";
 
+        try{
         System.out.println("Type 1 for metric or 2 for english units");
         unit = input.nextInt();
+
         System.out.println();
-
-        if(unit == 1){
-
+            if(unit == 1){
             System.out.println("Enter your weight in kilograms (kg)");
             weight = input.nextDouble();
             System.out.println();
@@ -31,8 +41,8 @@ public class CMPE102_BMI_Java_Console{
             System.out.println();
 
             input.close();
-            
-            bmi = weight / (Math.pow((height/100),2));
+
+            bmi = calculateMetric(weight, height);       
 
         }else if(unit == 2){
 
@@ -46,7 +56,7 @@ public class CMPE102_BMI_Java_Console{
 
             input.close();
 
-            bmi = (weight / (Math.pow(height, 2)))*703;
+            bmi = calculateEnglish(weight, height);
         }
 
         if(bmi <= 18.5){
@@ -63,6 +73,10 @@ public class CMPE102_BMI_Java_Console{
 
         System.out.println("Your BMI is: " + bmiString);
         System.out.print("Your BMI Rating is: " + bmiRating);
+
+    }catch(InputMismatchException e){
+        System.out.println("You have entered an invalid input. Please rerun the program");
+        }                             
 
     }
 }

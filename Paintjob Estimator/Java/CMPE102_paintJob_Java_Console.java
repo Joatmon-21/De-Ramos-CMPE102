@@ -39,7 +39,7 @@ public class CMPE102_paintJob_Java_Console {
 
         laborTimeHoursInt = (int) totalLaborTime; /* Converting to Int to obtain the whole number or hours only */
         laborTimeMinutesDouble = (double) (totalLaborTime - laborTimeHoursInt); /* Subtracting the whole number from the total to obtain minutes */
-        laborTimeMinutesInt = (int) (60*laborTimeMinutesDouble);
+        laborTimeMinutesInt = (int) (60*laborTimeMinutesDouble); /* Converting minutes from decimal form in hours into minutes */
 
         paintGallonString = String.format("%.02f", paintGallon);
         paintCostString = String.format("%.02f", paintCost);
