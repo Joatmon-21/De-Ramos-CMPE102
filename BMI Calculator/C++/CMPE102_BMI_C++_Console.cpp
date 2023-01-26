@@ -7,6 +7,14 @@
 #include <iomanip>
 #include <math.h>
 
+calculateMetric(double weight, double height){
+    return weight / (pow(height/100, 2));
+}
+
+calculateEnglish(double weight, double height){
+    return (weight / (pow(height,2)))*703;
+}
+
 using namespace std;
 
 int main(){
@@ -31,7 +39,7 @@ int main(){
         cin >> height;
         cout << endl;
 
-        bmi = weight / (pow(height/100, 2));
+        bmi = calculateMetric(weight, height);
 
         if(bmi <= 18.5){
             bmiRating = "Underweight";
@@ -54,19 +62,22 @@ int main(){
         cin >> height;
         cout << endl;
 
-        bmi = (weight / (pow(height,2)))*703;
+        bmi = calculateEnglish(weight, height);
+    }else{
+        cout << "You have entered an invalid input. Please rerun the program";
+        exit(0);
     }
 
 
-     if(bmi <= 18.5){
-            bmiRating = "Underweight";
-        }else if(bmi >= 18.6 && bmi <= 24.9){
-            bmiRating = "Normal";
-        }else if(bmi >= 25.0 && bmi <= 29.9){
-            bmiRating = "Overweight";
-        }else if(bmi >= 30){
-            bmiRating = "Obese";
-        }
+    if(bmi <= 18.5){
+        bmiRating = "Underweight";
+    }else if(bmi >= 18.6 && bmi <= 24.9){
+        bmiRating = "Normal";
+    }else if(bmi >= 25.0 && bmi <= 29.9){
+        bmiRating = "Overweight";
+    }else if(bmi >= 30){
+        bmiRating = "Obese";
+    }
             
         cout << fixed;
         cout.precision(2);

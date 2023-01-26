@@ -57,6 +57,9 @@ public class CMPE102_BMI_Java_Console{
             input.close();
 
             bmi = calculateEnglish(weight, height);
+        }else{
+            System.out.println("You have entered an invalid input. Please rerun the program");
+            System.exit(0);
         }
 
         if(bmi <= 18.5){
@@ -76,7 +79,7 @@ public class CMPE102_BMI_Java_Console{
 
     }catch(InputMismatchException e){
         System.out.println("You have entered an invalid input. Please rerun the program");
-        }                             
+    }                             
 
     }
 }
