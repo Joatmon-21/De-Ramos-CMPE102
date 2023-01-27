@@ -5,6 +5,18 @@
 
 using namespace std;
 
+double calculatePaintGallon(double wallArea){
+    return wallArea/115; /* 115sqft : 1 Gallon of Paint */
+}
+
+double calculateTotalLaborTime(double paintGallon){
+    return paintGallon*8; /* 1 Gallon of Paint : 8 Hours of Labor */
+}
+
+double calculateTotalLaborCost(double totalLaborTime){
+    return totalLaborTime*20; /* 8 Hours of Labor : 20 Dollars */
+}
+
 int main(){
 
     int laborTimeHoursInt;
@@ -24,10 +36,10 @@ int main(){
     cin >> paintPrice;
     cout << endl;
 
-    paintGallon = wallArea/115; /* 115sqft : 1 Gallon of Paint */
-    totalLaborTime = paintGallon*8; /* 1 Gallon of Paint : 8 Hours of Labor */
+    paintGallon = calculatePaintGallon(wallArea);
+    totalLaborTime = calculateTotalLaborTime(paintGallon);
     paintCost = paintGallon*paintPrice;
-    laborCost= totalLaborTime*20; /* 8 Hours of Labor : 20 Dollars */
+    laborCost = calculateTotalLaborCost(totalLaborTime);
     totalCost = laborCost + paintCost;
 
     laborTimeHoursInt = static_cast<int>(totalLaborTime); /* Converting to Int to obtain the whole number or hours only */

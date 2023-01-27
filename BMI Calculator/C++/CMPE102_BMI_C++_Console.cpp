@@ -7,11 +7,11 @@
 #include <iomanip>
 #include <math.h>
 
-calculateMetric(double weight, double height){
+double calculateMetric(double weight, double height){
     return weight / (pow(height/100, 2));
 }
 
-calculateEnglish(double weight, double height){
+double calculateEnglish(double weight, double height){
     return (weight / (pow(height,2)))*703;
 }
 

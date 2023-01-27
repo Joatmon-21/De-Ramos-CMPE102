@@ -3,6 +3,23 @@
 import java.util.Scanner;
 
 public class CMPE102_paintJob_Java_Console {
+    
+    public static double calculatePaintGallon(double wallArea){
+        return wallArea/115; /* 115sqft : 1 Gallon of Paint */
+    }
+
+    public static double calculateTotalLaborTime(double paintGallon){
+        return paintGallon*8; /* 1 Gallon of Paint : 8 Hours of Labor */
+    }
+
+    public static double calculatepaintCost(double paintGallon, double paintPrice){
+        return paintGallon*paintPrice;
+    }
+    
+    public static double calculateLaborCost(double paintGallon){
+        return paintGallon*20; /* 8 Hours of Labor : 20 Dollars */
+    }
+
     public static void main(String[]args){
 
         Scanner input = new Scanner(System.in);
@@ -31,10 +48,10 @@ public class CMPE102_paintJob_Java_Console {
 
         input.close();
 
-        paintGallon = wallArea/115; /* 115sqft : 1 Gallon of Paint */
-        totalLaborTime = paintGallon*8; /* 1 Gallon of Paint : 8 Hours of Labor */
-        paintCost = paintGallon*paintPrice;
-        laborCost= totalLaborTime*20; /* 8 Hours of Labor : 20 Dollars */
+        paintGallon = calculatePaintGallon(wallArea);
+        totalLaborTime = calculateTotalLaborTime(paintGallon);
+        paintCost = calculatepaintCost(paintGallon, paintPrice);
+        laborCost = calculateLaborCost(paintGallon);
         totalCost = laborCost + paintCost;
 
         laborTimeHoursInt = (int) totalLaborTime; /* Converting to Int to obtain the whole number or hours only */
@@ -47,7 +64,8 @@ public class CMPE102_paintJob_Java_Console {
         totalCostString = String.format("%.02f", totalCost);
 
         if(paintGallon == 1){
-            System.out.println("Gallons of paint required: " + paintGallonString + " gallon of paint");    
+            System.out.println("Gallons of paint required: " + paintGallonString + " gallon of paint");
+            
         }else{
             System.out.println("Gallons of paint required: " + paintGallonString + " gallons of paint");
         }

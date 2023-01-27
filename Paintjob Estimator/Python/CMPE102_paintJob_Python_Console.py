@@ -1,15 +1,22 @@
 # Written by: Dan Jandel C. De Ramos
 
+def calculatePaintGallon(wallArea):
+    return wallArea/115 # 115sqft : 1 Gallon of Paint 
+def calculateTotalLaborTime(paintGallon):
+    return paintGallon*8 # 1 Gallon of Paint : 8 Hours of Labor
+def calculateTotalLaborCost(totalLaborTime):
+    return totalLaborTime*20 # 8 Hours of Labor : 20 Dollars
+
 print ("Enter the area of the wall (Square Feet)")
 wallArea = (float(input("")))
 print ("Enter the price of the paint per gallon (USD)")
 paintPrice = (float(input("")))
 print()
 
-paintGallon = wallArea/115 # 115sqft : 1 Gallon of Paint 
-totalLaborTime = paintGallon*8 # 1 Gallon of Paint : 8 Hours of Labor
+paintGallon = calculatePaintGallon(wallArea)
+totalLaborTime = calculateTotalLaborTime(paintGallon)
 paintCost = paintGallon*paintPrice
-laborCost = totalLaborTime*20 # 8 Hours of Labor : 20 Dollars
+laborCost = calculateTotalLaborCost(totalLaborTime)
 totalCost = laborCost + paintCost
 
 laborTimeHoursInt = (int(totalLaborTime)) # Converting to Int to obtain the whole number or hours only
