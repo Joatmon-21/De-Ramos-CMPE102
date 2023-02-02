@@ -27,13 +27,14 @@ int main(){
 
     cout << "Enter the hours the vehicle has traveled \n";
     cin >> hours;
+    cout << "\n";
 
     cout << "Time Spent                  Distance Traveled \n";
     cout << "_____________________________________________ \n";
 
     if (unit == 1){
-        for(int loop = 1; loop < hours+1; loop++){
-            if(loop == 1){
+        for(int loop = 0; loop < hours; loop++){
+            if(loop == 0){
                 hourCounter++;
                 cout << hourCounter << " Hour" << "             " << (hourCounter*speed) << " Kilometers \n";
             }else{
@@ -42,8 +43,8 @@ int main(){
             }            
         }
     }else{
-        for(int loop = 1; loop < hours+1; loop++){
-            if(loop == 1){
+        for(int loop = 0; loop < hours; loop++){
+            if(loop == 0){
                 hourCounter++;
                 cout << hourCounter << " Hour" << "             " << (hourCounter*speed) << " Miles \n";
             }else{

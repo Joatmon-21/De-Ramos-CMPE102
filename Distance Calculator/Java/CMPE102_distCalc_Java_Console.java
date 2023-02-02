@@ -40,8 +40,8 @@ public class CMPE102_distCalc_Java_Console {
             System.out.println("_____________________________________________");
             
             if(unit == 1){
-                for(int loop = 1; loop < hours+1; loop ++){       
-                    if(hourCounter == 1){
+                for(int loop = 0; loop < hours; loop ++){       
+                    if(loop == 0){
                         hourCounter++;
                         System.out.println(hourCounter + " Hour" + "                              " + (hourCounter*speed) + " Kilometers");    
                     }else{
@@ -53,8 +53,8 @@ public class CMPE102_distCalc_Java_Console {
             }
             else{
 
-                for(int loop = 1; loop < hours+1; loop ++){       
-                    if(loop == 1){
+                for(int loop = 0; loop < hours; loop ++){       
+                    if(loop == 0){
                         hourCounter++;
                         System.out.println(hourCounter + " Hour" + "                               " + (hourCounter*speed) + " Miles");    
                     }else{

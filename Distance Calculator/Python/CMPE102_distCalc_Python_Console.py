@@ -1,7 +1,7 @@
 # Written by Dan Jandel C. De Ramos
 
 hourCounter = 0
-loop = 1
+loop = 0
 try:
     print("Type 1 for metric or 2 for english units")
     unit = (int(input("")))
@@ -22,8 +22,8 @@ try:
     print("_____________________________________________")
 
     if(unit == 1):
-        while loop < hours+1:
-            if(loop == 1):
+        while loop < hours:
+            if(loop == 0):
                 loop += 1
                 hourCounter += 1
                 print(hourCounter, " Hour ", "           ", (speed*hourCounter), " Kilometers")
@@ -32,8 +32,8 @@ try:
                 hourCounter += 1
                 print(hourCounter, " Hours ", "          ", (speed*hourCounter), " Kilometers")
     else:
-        while loop < hours+1:
-            if(loop == 1):
+        while loop < hours:
+            if(loop == 0):
                 loop +=1
                 hourCounter +=1
                 print(hourCounter, " Hour ", "           ", (speed*hourCounter), " Miles")
