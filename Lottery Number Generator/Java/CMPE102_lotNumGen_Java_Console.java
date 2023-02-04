@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class CMPE102_lotNumGen_Java_Console{
     
-    public static void lotterNumberyGenerator(){
+    public static void lotteryNumberyGenerator(){
+
         Random randomizer = new Random();
         int[] lotteryNumbers = new int[7];
         
@@ -15,8 +16,7 @@ public class CMPE102_lotNumGen_Java_Console{
     }
 
     public static void main(String[] args) {
-        
-    System.out.print("Lottery Numbers: ");
-    lotterNumberyGenerator();
+        System.out.print("Lottery Numbers: ");
+        lotteryNumberyGenerator();
     }
 }
