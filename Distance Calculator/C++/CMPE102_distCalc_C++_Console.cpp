@@ -36,7 +36,7 @@ int main(){
         for(int loop = 0; loop < hours; loop++){
             if(loop == 0){
                 hourCounter++;
-                cout << hourCounter << " Hour" << "             " << (hourCounter*speed) << " Kilometers \n";
+                cout << hourCounter << " Hour" << "              " << (hourCounter*speed) << " Kilometers \n";
             }else{
                 hourCounter++;
                 cout << hourCounter << " Hours " << "            " << (hourCounter*speed) << " Kilometers \n";
@@ -46,7 +46,7 @@ int main(){
         for(int loop = 0; loop < hours; loop++){
             if(loop == 0){
                 hourCounter++;
-                cout << hourCounter << " Hour" << "             " << (hourCounter*speed) << " Miles \n";
+                cout << hourCounter << " Hour" << "              " << (hourCounter*speed) << " Miles \n";
             }else{
                 hourCounter++;
                 cout << hourCounter << " Hours " << "            " << (hourCounter*speed) << " Miles \n";

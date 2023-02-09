@@ -17,10 +17,10 @@ public class CMPE102_sortBench_Java_Console{
         for(int bubbleLoop1 = 1; bubbleLoop1 < bubbleSortArray.length; bubbleLoop1++){
             for(int bubbleLoop2 = 0; bubbleLoop2 < (bubbleSortArray.length-1); bubbleLoop2++){
                 if(bubbleSortArray[bubbleLoop2] > bubbleSortArray[bubbleLoop2+1]){
-                    bubbleSwapCount++;
                     int bubbleTemp = bubbleSortArray[bubbleLoop2+1];          // Creating a temporary placeholder as the next value would overwrite the value before it
                     bubbleSortArray[bubbleLoop2+1] = bubbleSortArray[bubbleLoop2];  // Assigning the larger value to the next array position
                     bubbleSortArray[bubbleLoop2] = bubbleTemp;                // Returning the temporary value to the value prior to the overwritten one
+                    bubbleSwapCount++;
                 }
             } 
         }
