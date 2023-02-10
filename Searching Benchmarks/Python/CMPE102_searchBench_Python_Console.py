@@ -1,3 +1,6 @@
+# Written by: Dan Jandel C. De Ramos
+# Random numbers generated using: https://numbergenerator.org/randomnumbergenerator/1-100#!numbers=20&low=1&high=100&unique=true&csv=&oddeven=&oddqty=0&sorted=false&addfilters= 
+
 searchArray = [37, 84, 70, 56, 58, 82, 50, 49, 99, 64, 30, 91, 60, 93, 16, 34, 24, 47, 80, 39]
 
 targetValue = 30
