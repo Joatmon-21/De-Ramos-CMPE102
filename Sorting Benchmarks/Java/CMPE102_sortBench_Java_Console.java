@@ -12,7 +12,7 @@ public class CMPE102_sortBench_Java_Console{
     public static int[] selectionSortArray = {11, 21, 31, 96, 25, 20, 6, 44, 60, 85, 100, 27, 14, 8, 36, 34, 2, 95, 76, 54};
 
     public static void bubbleSort(){
-        int bubbleSwapCount = 1;
+        int bubbleSwapCount = 0;
 
         for(int bubbleLoop1 = 1; bubbleLoop1 < bubbleSortArray.length; bubbleLoop1++){
             for(int bubbleLoop2 = 0; bubbleLoop2 < (bubbleSortArray.length-1); bubbleLoop2++){
@@ -36,7 +36,7 @@ public class CMPE102_sortBench_Java_Console{
     }
 
     public static void insertionSort(){
-        int insertionSwapCount = 1;
+        int insertionSwapCount = 0;
 
         for(int insertionLoop1 = 1; insertionLoop1 < insertionSortArray.length; insertionLoop1++){
             for(int insertionLoop2 = insertionLoop1; insertionLoop2 > 0 && insertionSortArray[insertionLoop2-1] > insertionSortArray[insertionLoop2]; insertionLoop2--){                
@@ -59,7 +59,7 @@ public class CMPE102_sortBench_Java_Console{
     }
 
     public static void selectionSort(){
-        int selectionSwapCount = 1;
+        int selectionSwapCount = 0;
         int selectionLoop2;
 
         for(int selectionLoop1 = 0; selectionLoop1 < selectionSortArray.length; selectionLoop1++){

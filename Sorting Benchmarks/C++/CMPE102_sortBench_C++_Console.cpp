@@ -1,5 +1,7 @@
-// Written by: Dan Jandel C. De Ramos
-
+/* 
+Written by: Dan Jandel C. De Ramos
+Random numbers generated using: https://numbergenerator.org/randomnumbergenerator/1-100#!numbers=20&low=1&high=100&unique=true&csv=&oddeven=&oddqty=0&sorted=false&addfilters=
+*/
 #include <iostream>
 
 using namespace std;
@@ -9,7 +11,7 @@ int insertionSortArray[] = {11, 21, 31, 96, 25, 20, 6, 44, 60, 85, 100, 27, 14, 
 int selectionSortArray[] = {11, 21, 31, 96, 25, 20, 6, 44, 60, 85, 100, 27, 14, 8, 36, 34, 2, 95, 76, 54};
 
 void bubbleSort(){
-    int bubbleSwapCount = 1;
+    int bubbleSwapCount = 0;
 
     for(int bubbleLoop1 = 1; bubbleLoop1 < (sizeof(bubbleSortArray)/sizeof(int)); bubbleLoop1++){
         for(int bubbleLoop2 = 0; bubbleLoop2 < ((sizeof(bubbleSortArray)/sizeof(int))-1); bubbleLoop2++){
@@ -36,7 +38,7 @@ void bubbleSort(){
 
 void insertionSort(){
 
-    int insertionSwapCount = 1;
+    int insertionSwapCount = 0;
 
         for(int insertionLoop1 = 1; insertionLoop1 < (sizeof(insertionSortArray)/sizeof(int)); insertionLoop1++){
             for(int insertionLoop2 = insertionLoop1; insertionLoop2 > 0 && insertionSortArray[insertionLoop2-1] > insertionSortArray[insertionLoop2]; insertionLoop2--){                
@@ -59,7 +61,7 @@ void insertionSort(){
 }
 
 void selectionSort(){
-    int selectionSwapCount = 1;
+    int selectionSwapCount = 0;
     int selectionLoop2;
 
     for(int selectionLoop1 = 0; selectionLoop1 < (sizeof(selectionSortArray)/sizeof(int)); selectionLoop1++){

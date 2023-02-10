@@ -6,7 +6,7 @@ insertionSortArray = [11, 21, 31, 96, 25, 20, 6, 44, 60, 85, 100, 27, 14, 8, 36,
 selectionSortArray = [11, 21, 31, 96, 25, 20, 6, 44, 60, 85, 100, 27, 14, 8, 36, 34, 2, 95, 76, 54]
 
 def bubbleSort():
-    bubbleSwapCount = 1
+    bubbleSwapCount = 0
 
     for bubbleLoop1 in range(1, len(bubbleSortArray)):
         for bubbleLoop2 in range(0, (len(bubbleSortArray))-1):
@@ -26,7 +26,7 @@ def bubbleSort():
     print("Number of swaps performed:", bubbleSwapCount)
 
 def insertionSort():
-    insertionSwapCount = 1
+    insertionSwapCount = 0
     
     for insertionLoop1 in range(1, len(insertionSortArray)):
         insertionLoop2 = insertionLoop1
@@ -46,7 +46,7 @@ def insertionSort():
     print("Number of swaps performed:", insertionSwapCount)
 
 def selectionSort():
-    selectionSwapCount = 1
+    selectionSwapCount = 0
 
     for selectionLoop1 in range(0, len(selectionSortArray)):
         smallerValue = selectionLoop1
