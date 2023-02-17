@@ -1,3 +1,8 @@
+/*
+Written by: Dan Jandel C. De Ramos
+Random numbers generated using: https://numbergenerator.org/randomnumbergenerator/1-100#!numbers=20&low=1&high=100&unique=true&csv=&oddeven=&oddqty=0&sorted=false&addfilters= 
+*/
+
 #include<iostream>
 
 using namespace std;
