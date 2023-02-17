@@ -1,3 +1,4 @@
+// !!! UNFINISHED !!!
 // I really need to study exception handling, otherwise infinite loop when inputting other data types -Jandel
 
 #include <iostream>
