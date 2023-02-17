@@ -25,7 +25,7 @@ public class CMPE102_astronomyHelper_Java_Console {
                     System.out.println();
                     System.out.println("Mercury");
                     System.out.println("Average distance from the sun: 57.9 million kilometers");
-                    System.out.println("Mass: 31 x 10^23kg");
+                    System.out.println("Mass: 3.31 x 10^23kg");
                     System.out.println("Surface temperature: -173 to 430 degrees Celsius");
                     System.out.println();
                     continue;

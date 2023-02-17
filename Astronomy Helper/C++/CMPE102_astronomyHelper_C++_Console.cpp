@@ -24,7 +24,7 @@ int main(){
                     cout << "\n";
                     cout << "Mercury \n";
                     cout << "Average distance from the sun: 57.9 million kilometers \n";
-                    cout << "Mass: 31 x 10^23kg \n";
+                    cout << "Mass: 3.31 x 10^23kg \n";
                     cout << "Surface temperature: -173 to 430 degrees Celsius \n";
                     cout << "\n";
                     continue;

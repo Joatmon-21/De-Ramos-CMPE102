@@ -17,7 +17,7 @@ while loop == 0:
             print()
             print("Mercury")
             print("Average distance from the sun: 57.9 million kilometers")
-            print("Mass: 31 x 10^23kg")
+            print("Mass: 3.31 x 10^23kg")
             print("Surface temperature: -173 to 430 degrees Celsius")
             print()
             continue
